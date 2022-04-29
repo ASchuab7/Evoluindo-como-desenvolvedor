@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device=width, inicial-scale=1.0">
+        <meta http-equiv=""X-UA-Compatible" content="ie=edge">
+        <title>Programando com JavaScript</title>
+        <style>
+            #post1 {
+                background-color: black;
+                color: white;
+                margin-left: 0.5%;
+                margin-right: 60%;
+                padding: 3%;
+            }
+            #resposta {
+                font: 20pt Arial;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header> <h1>Curso de JavaScript</h1>
+        </header>
+        <section>
+            <header>
+                <h2>Iniciando comandos de JavaScript</h2>
+            </header>
+        </section> 
+        <article id="post1">
+            <header>
+                <h3>Aula 6</h3>
+                <p> Na aula 6 realizaremos as seguintes ações:</p>
+                <ul>
+                    <li>Comandos no Node.js</li>
+                    <li>Variaveis com JavaScript</li>
+                    <li>Janelas de alerta em paginas web</li>
+                    <li>Gravar respostas com JavaScript</li> 
+                </ul>
+            </header>
+        </article> 
+         <script id="resposta"> 
+            var nome = window.prompt("Qual é o seu nome?")
+            document.write(`seu nome tem ${nome.length} letras.`)
+         </script>
+    </body>
+</html>
