@@ -7,3 +7,4 @@
  - Empresa Digital innovation
  - Zero a carreira
  - To do list 
+ - Primeira pagina completa com HTML E CSS
