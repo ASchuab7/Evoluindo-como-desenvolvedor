@@ -4,6 +4,7 @@
 
  - ### Lógica de programação com VisuALG
  - ### Front-end utilizando HTML, CSS, Javascript etc...
+ - Recriando a página inicial do Instagram
  - Empresa Digital innovation
  - Zero a carreira
  - To do list 
