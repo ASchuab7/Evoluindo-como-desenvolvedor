@@ -1,0 +1,87 @@
+<DOCTYPE html>
+
+<html lang"en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fundamentos - Flex</title>
+		
+		<style>
+			.flex-container{
+				display: flex;
+				border: 1px solid black;
+				max-width: 350px;
+				margin-bottom: 10px;
+				/*align-items: center;*/
+			}
+
+			.align-items{
+				align-items: center;
+			}
+
+			.items{
+				background-color: brown;
+				color: white;
+				margin: 5px;
+				text-align: center;
+				font-size: 24px;
+			}
+
+			.center{
+				align-self: center;
+			}
+
+			.start{
+				align-self: flex-start;
+			}
+
+			.end{
+				align-self: flex-end;
+			}
+
+			.baseline{
+				align-self: baseline;
+			}
+
+			.stretch{
+				align-self: stretch;
+			}
+
+			.auto{
+				align-self: auto;
+			}
+
+			.column{
+				flex-direction: column;
+			}
+		
+		</style>
+	</head>
+	<body>
+		
+		<h3>Align mix</h3>
+		<div class="flex-container column">
+			<div class="items align-items">AAA</div>
+			<div class="items end">123</div>
+			<div class="items stretch">Lorem Ipsum is simply, Lorem Ipsum is simply</div>
+			<div class="items baseline">ITEM 4</div>
+		</div>
+
+		<h3>Align auto</h3>
+		<div class="flex-container">
+			<div class="items auto">AAA</div>
+			<div class="items auto">123</div>
+			<div class="items auto">Lorem Ipsum is simply</div>
+			<div class="items auto">ITEM 4</div>
+		</div>
+
+		<h3>Align Start</h3>
+		<div class="flex-container">
+			<div class="items start">AAA</div>
+			<div class="items start">123</div>
+			<div class="items start">Lorem Ipsum is simply</div>
+			<div class="items start">ITEM 4</div>
+		</div>
+		
+	</body>
+</html>

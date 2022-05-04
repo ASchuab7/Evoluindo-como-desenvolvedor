@@ -1,0 +1,89 @@
+<DOCTYPE html>
+
+<html lang"en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fundamentos - Flex basis</title>
+		
+		<style>
+			.flex-container{
+				display: flex;
+				max-width: 350px;
+				border: 2px solid black;
+				margin-bottom: 10px;
+			}
+
+			.items{
+				background-color: orangered;
+				font-size: 24px;
+				text-align: center;
+				margin: 5px;
+			}
+
+			.fs-0{
+				flex-shrink: 0;
+				flex-basis: 100px;
+			}
+
+			.fs-1{
+				flex-shrink: 1;
+			}
+
+			.fs-2{
+				flex-shrink: 2;
+				flex-basis: 100px;
+			}
+
+			.fs-3{
+				flex-shrink: 3;
+				flex-basis: 100px;
+			}
+
+			.fg-1{
+				flex-grow: 1;
+			}
+			
+		
+		</style>
+	</head>
+	<body>
+
+		<h3>Flex Shrink 1</h3>
+		<div class="flex-container">
+			<div class="items fs-1 fg-1">A</div>
+			<div class="items fs-1 fg-1">B</div>
+			<div class="items fs-1 fg-1">C</div>
+			<div class="items fs-1 fg-1">D</div>
+			<div class="items fs-1 fg-1">E</div>
+		</div>
+
+		<h3>Flex Shrink conteudos diferentes</h3>
+		<div class="flex-container">
+			<div class="items fs-1 fg-1">A</div>
+			<div class="items fs-1 fg-1">Lorem Ipsum is simply</div>
+			<div class="items fs-1 fg-1">C</div>
+			<div class="items fs-1 fg-1">D</div>
+			<div class="items fs-1 fg-1">E</div>
+		</div>
+
+		<h3>Flex Shrink 0 / basis 100px</h3>
+		<div class="flex-container">
+			<div class="items fs-0 fg-1">A</div>
+			<div class="items fs-0 fg-1">Lorem Ipsum is simply</div>
+			<div class="items fs-0 fg-1">C</div>
+			<div class="items fs-0 fg-1">D</div>
+			<div class="items fs-0 fg-1">E</div>
+		</div>
+
+		<h3>Flex Shrink mix - </h3>
+		<div class="flex-container">
+			<div class="items fs-2 fg-1">A</div>
+			<div class="items fs-3 fg-1">Lorem Ipsum is simply</div>
+			<div class="items fs-0 fg-1">C</div>
+			<div class="items fs-2 fg-1">D</div>
+			<div class="items fs-3 fg-1">E</div>
+		</div>
+		
+	</body>
+</html>
